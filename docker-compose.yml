@@ -14,6 +14,7 @@ services:
     volumes:
       - /home/ubuntu/code:/code
       - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.ssh:/abc/.ssh
     ports:
       - 8000:8000
     restart: unless-stopped

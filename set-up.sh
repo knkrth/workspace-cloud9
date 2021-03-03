@@ -12,6 +12,7 @@ sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo groupadd docker
 sudo usermod -aG docker $USER
+sudo apt-get install docker-compose -y
 echo "Done installing docker compose"
 echo "========================="
 echo " "
