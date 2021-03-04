@@ -1,2 +1,2 @@
-# shadow-cloud9
+# workspace-cloud9
 Cloud9 Docker Compose
