@@ -17,10 +17,7 @@ services:
     ports:
       - 8000:8000
     restart: unless-stopped
-
-    # required commands after set up - inside Cloud9 IDE terminal (TODO move to after start script)
-    # sudo apt update
-    # sudo apt upgrade
-    # sudo apt install ssh
-    # eval "$(ssh-agent -s)"
-    # ssh-add /abc/.ssh/id_ed25519
+    command: 
+    - touch /etc/init/start-ssh.conf
+    - echo 'eval "$(ssh-agent -s)"' > /etc/init/start-ssh.conf
+    - echo 'ssh-add /abc/.ssh/id_ed25519' > /etc/init/start-ssh.conf
